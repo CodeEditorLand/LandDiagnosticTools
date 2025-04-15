@@ -1,7 +1,29 @@
 {
 	"name": "@codeeditorland/diagnostic-tools",
 	"displayName": "VS Code Diagnostic Tools",
+	"version": "0.0.1",
+	"private": false,
 	"description": "A collection of tools designed to aid debugging and developing VS Code",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandDiagnosticTools#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandDiagnosticTools/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandDiagnosticTools.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./dist/desktop/index.js",
 	"browser": "./dist/web/index.js",
 	"files": [
@@ -24,7 +46,8 @@
 		"build-webpack-desktop": "webpack --config webpack.config.ts --mode production --env TARGET=desktop",
 		"build-webpack-web": "webpack --config webpack.config.ts --mode production --env TARGET=web",
 		"bundle": "vsce package -o extension.vsix --allow-star-activation",
-		"dev": "tsc --watch"
+		"dev": "tsc --watch",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"contributes": {
 		"commands": [
@@ -99,6 +122,10 @@
 		"messagepack": "1.1.12"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.3",
 		"ts-loader": "9.5.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
