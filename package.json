@@ -116,7 +116,7 @@
 		"onStartupFinished"
 	],
 	"dependencies": {
-		"@types/node": "22.15.2",
+		"@types/node": "22.15.3",
 		"base64-js": "1.5.1",
 		"lzma": "2.3.2",
 		"messagepack": "1.1.12"
