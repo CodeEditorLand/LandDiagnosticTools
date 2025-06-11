@@ -95,7 +95,7 @@
 		}
 	},
 	"dependencies": {
-		"@types/node": "^22.15.30",
+		"@types/node": "^24.0.0",
 		"@types/vscode": "^1.100.0",
 		"base64-js": "^1.5.1",
 		"lzma": "^2.3.2",
